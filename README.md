@@ -2,6 +2,8 @@
 
 This is an AI Chatbot by baidy
 
+___The chats folder should be empty. I left drake.json as an example file which I used in description on how my project works.___
+
 ## Installation:
 * Run command "pip install -r requirements.txt"
 * Create OpenAI API Key
