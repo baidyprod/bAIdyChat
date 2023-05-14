@@ -29,11 +29,11 @@ if new_chat_or_existing == "new":
     while True:
         user_input = input('User (type "exit" to save and exit): ')
         if user_input != "exit":
-            conversation.predict(input=user_input)
-            print(f"AI: {conversation.memory.chat_memory.messages[-1].content}")
+            ai_output = conversation.predict(input=user_input)
+            print(f"AI: {ai_output}")
 
             history.add_user_message(user_input)
-            history.add_ai_message(conversation.memory.chat_memory.messages[-1].content)
+            history.add_ai_message(ai_output)
 
         else:
             conversation_history = messages_to_dict(history.messages)
@@ -47,20 +47,19 @@ else:
     with open(f"chats/{new_chat_or_existing}") as f:
         chat_history = json.load(f)
 
-    conversation = ConversationChain(llm=llm, memory=ConversationBufferMemory(chat_memory=ChatMessageHistory(
-                messages=messages_from_dict(chat_history)
-            )
-        ),
+    conversation = ConversationChain(
+        llm=llm,
+        memory=ConversationBufferMemory(chat_memory=ChatMessageHistory(messages=messages_from_dict(chat_history))),
     )
 
     while True:
         user_input = input('User (type "exit" to save and exit): ')
         if user_input != "exit":
-            conversation.predict(input=user_input)
-            print(f"AI: {conversation.memory.chat_memory.messages[-1].content}")
+            ai_output = conversation.predict(input=user_input)
+            print(f"AI: {ai_output}")
 
             history.add_user_message(user_input)
-            history.add_ai_message(conversation.memory.chat_memory.messages[-1].content)
+            history.add_ai_message(ai_output)
 
         else:
             conversation_history = messages_to_dict(history.messages)
