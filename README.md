@@ -16,3 +16,6 @@ ___The chats folder should be empty. I left drake.json as an example file which 
 
 ## Let's retrieve the previous conversation context
 ![Retrieving previous conversations](https://res.cloudinary.com/dbtmzypoa/image/upload/v1684146416/AI%20Chat%20screenshots/h9wc2xxdihrhyisxibwu.png)
+
+## Chatbot can also handle huge conversations which exceed token limitations of LLM
+![Working with huge conversations](https://res.cloudinary.com/dbtmzypoa/image/upload/v1684147601/AI%20Chat%20screenshots/deph0q3yz84kts56kqai.png)
