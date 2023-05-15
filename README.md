@@ -2,7 +2,7 @@
 
 This is an AI Chatbot by baidy
 
-___The chats folder should be empty. I left two jsons as an example file which I used in description on how my project works.___
+___The chats folder should be empty. I left two jsons as examples which I used in description on how my project works.___
 
 ## Installation:
 * Run command "pip install -r requirements.txt"
