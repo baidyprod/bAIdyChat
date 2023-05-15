@@ -1,4 +1,4 @@
-# AI Chatbot by baidy
+# bAIdyChat
 
 This is an AI Chatbot by baidy
 
