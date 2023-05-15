@@ -64,7 +64,7 @@ else:
 
         else:
             conversation_history = messages_to_dict(history.messages)
-            chat_history.append(conversation_history)
+            chat_history.extend(conversation_history)
             with open(f"chats/{new_chat_or_existing}.json", "w") as f:
                 json.dump(chat_history, f)
 
