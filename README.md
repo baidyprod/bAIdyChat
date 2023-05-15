@@ -2,7 +2,7 @@
 
 This is an AI Chatbot by baidy
 
-___The chats folder should be empty. I left drake.json as an example file which I used in description on how my project works.___
+___The chats folder should be empty. I left two jsons as an example file which I used in description on how my project works.___
 
 ## Installation:
 * Run command "pip install -r requirements.txt"
@@ -17,5 +17,5 @@ ___The chats folder should be empty. I left drake.json as an example file which 
 ## Let's retrieve the previous conversation context
 ![Retrieving previous conversations](https://res.cloudinary.com/dbtmzypoa/image/upload/v1684146416/AI%20Chat%20screenshots/h9wc2xxdihrhyisxibwu.png)
 
-## Chatbot can also handle huge conversations which exceed token limitations of LLM
+## Chatbot can also handle huge conversations which exceed token limitations of LLM (web_frameworks.json conversation is much longer than 4k tokens)
 ![Working with huge conversations](https://res.cloudinary.com/dbtmzypoa/image/upload/v1684147601/AI%20Chat%20screenshots/deph0q3yz84kts56kqai.png)
